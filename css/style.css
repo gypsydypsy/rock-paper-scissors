@@ -1,0 +1,241 @@
+/* All */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-transform: uppercase;
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto 0 auto;
+    
+}
+
+.round-img {
+    background-color : #FFF; 
+    border-radius: 100px;
+    height: 120px;
+    width: 120px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+
+.papier {
+    background-image : url('../img/icon-paper.svg');
+    border: 15px solid hsl(230, 89%, 65%);
+    box-shadow: 0px 4px 0px 2px hsl(230, 89%, 58%), inset 0px 3px 0px hsl(0, 0%, 80%);
+}
+
+.ciseaux {
+    background-image : url('../img/icon-scissors.svg');
+    border: 15px solid hsl(39, 89%, 49%);
+    box-shadow: 0px 4px 0px 2px hsl(39, 89%, 40%), inset 0px 3px 0px hsl(0, 0%, 80%);  
+}
+
+.pierre {
+    background-image : url('../img/icon-rock.svg');
+    border: 15px solid hsl(349, 71%, 52%);
+    box-shadow: 0px 4px 0px 2px hsl(349, 71%, 40%), inset 0px 3px 0px hsl(0, 0%, 80%);
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    border : hsl(217, 16%, 45%) 1px solid;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 90%;
+    margin: 0;
+    margin-left: 10px;
+}
+
+header > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+header h2 {
+    color : hsl(229, 64%, 46%);
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+header p {
+    color : hsl(229, 25%, 31%);
+    font-size: 3rem;
+    margin: 0;
+    line-height: 100%;
+}
+
+/* Selection */
+.selection {
+    position: relative;
+    text-align: center;
+    max-width: 400px;
+    margin: 120px auto 80px auto;
+}
+
+.selection img {
+    width: 80%;    
+}
+
+.selection div {
+    position: absolute;
+}
+
+.selection div:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.selection .papier {
+    top: -40px;
+    left: 0px;
+}
+
+.selection .ciseaux {
+    top: -40px;
+    right: 0px;
+}
+
+.selection .pierre {
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.selection .pierre:hover {
+    transform: scale(1.2) translateX(-40%);
+}
+
+/* Bataille */
+.bataille {
+    display: none;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin: 85px auto 45px;
+}
+
+.bataille > div {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Resultat */
+.resultat {
+    display: none;
+    text-align: center;
+}
+
+.resultat h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 50px 0 30px 0;
+}
+
+.resultat button {
+    text-transform: uppercase;
+    color: hsl(214, 47%, 23%);
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 15px 40px;
+}
+
+.resultat button:hover{
+    cursor: pointer;
+    transform : scale(1.1);
+}
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer button {
+    background-color: transparent;
+    border: solid 1px hsl(0, 0%, 80%);
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+
+footer button:hover {
+    cursor: pointer;
+    background : white;
+    color : hsl(237, 49%, 15%);
+    font-weight: 600;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.modal-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:hsl(237, 49%, 15%);
+    max-width: 500px;
+    margin : auto;
+}
+
+.modal-nav h2 {
+    margin: 0;
+}
+
+.modal-content .rules {
+    width: 100%;
+    max-width: 400px;
+    margin : 60px auto 50px auto;
+    display: block;
+}
+
+ 
+
+   
+
