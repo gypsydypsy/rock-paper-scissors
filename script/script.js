@@ -167,5 +167,3 @@ window.addEventListener('click',  function(e){
         hideRules();
     }
 })
-
-/* Animations */
